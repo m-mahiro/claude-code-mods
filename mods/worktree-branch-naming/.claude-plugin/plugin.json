@@ -1,0 +1,26 @@
+{
+  "name": "worktree-branch-naming",
+  "displayName": "Worktree Branch Naming",
+  "version": "1.0.0",
+  "description": "Customize the git branch name Claude Code gives new worktrees instead of the default worktree-<name> pattern.",
+  "author": {
+    "name": "m-mahiro"
+  },
+  "license": "MIT",
+  "keywords": ["worktree", "git", "branch-naming"],
+  "userConfig": {
+    "branch_template": {
+      "type": "string",
+      "title": "Branch name template",
+      "description": "Template for the git branch name created for each new worktree. Use {name} as a placeholder for the worktree's slug. Example: \"claude/{name}\" turns the name \"issue-32-fix-xxxx\" into the branch \"claude/issue-32-fix-xxxx\" instead of the default \"worktree-issue-32-fix-xxxx\".",
+      "default": "claude/{name}"
+    },
+    "base_ref": {
+      "type": "string",
+      "title": "Base ref",
+      "description": "Which commit new worktree branches start from, mirroring Claude Code's built-in worktree.baseRef setting. \"fresh\" branches from the remote's default branch; \"head\" branches from the current local HEAD.",
+      "options": ["fresh", "head"],
+      "default": "fresh"
+    }
+  }
+}

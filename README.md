@@ -7,3 +7,4 @@ Claude Code 用の mods（`claude plugin validate`/`claude plugin test` で検�
 ## mods
 
 - [`mods/btw-fix`](mods/btw-fix) — `/btw` がメイン会話をスクロール不能にし、パネルを閉じると回答がキャンセルされる問題への対処
+- [`mods/worktree-branch-naming`](mods/worktree-branch-naming) — `EnterWorktree` で作る git ブランチの自動命名規則（デフォルトの `worktree-<name>`）を、テンプレート指定でカスタマイズできるようにする
