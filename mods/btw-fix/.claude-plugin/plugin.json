@@ -1,0 +1,6 @@
+{
+  "name": "btw-fix",
+  "version": "0.1.0",
+  "description": "Replaces /btw's blocking side panel with a plain, scrollable transcript answer.",
+  "author": { "name": "m-mahiro" }
+}
